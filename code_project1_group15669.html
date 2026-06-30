@@ -8727,7 +8727,7 @@ $$-2 l_o + (k+1) \log n  &lt; -2 l_t + k \log n $$<p>which is $LR &gt; \log n$. 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Problem-4">Problem 4<a class="anchor-link" href="#Problem-4">¶</a></h1><h2 id="Question-4a">Question 4a<a class="anchor-link" href="#Question-4a">¶</a></h2><p>age^2 was included because the relationship between age and wage is not likely to be purely linear. Wage usually increase with age and work experience at young ages, but the increase speed may change later in a worker's career. By including both age and age^2, the model allows the effect of age on wage to change as age changes.</p>
 <h2 id="Question-4b">Question 4b<a class="anchor-link" href="#Question-4b">¶</a></h2><p>ln wage is used since wages are usually right skewed. A small number of rich people earn very high wages. Taking logs makes it less skewed and reduces the influence of extreme wage values. If often makes the regression relationship closer to linear, and helps stabilize the variance of the error term. Besides, coefficients in a log-wage model are easier to interpret as approximate percentage effects.</p>
-<h2 id="Question-4c">Question 4c<a class="anchor-link" href="#Question-4c">¶</a></h2><p>ln wage is used because percentage changes are usually more meaningful than absolute dollar change. E.g. $5/h increase means different for a worker earning $10/h than for a worker earning $1000/h. Using log wage allows to describe the effect of education, age, gender or degree as an approximate percentage change in wage, which is more meaningful when comparing workers with different wage levels.</p>
+<h2 id="Question-4c">Question 4c<a class="anchor-link" href="#Question-4c">¶</a></h2><p>ln wage is used because percentage changes are usually more meaningful than absolute dollar change. E.g. 5 dollar /h increase means different for a worker earning 10 dollar /h than for a worker earning 1000 dollar /h. Using log wage allows to describe the effect of education, age, gender or degree as an approximate percentage change in wage, which is more meaningful when comparing workers with different wage levels.</p>
 <h2 id="Question-4d">Question 4d<a class="anchor-link" href="#Question-4d">¶</a></h2><p>All else equal (equal gender, age, and degree status), one additional year of education is associated with $\exp{0.08} - 1 = 8.33\%$ increase in hourly wage.</p>
 <h2 id="Question-4e">Question 4e<a class="anchor-link" href="#Question-4e">¶</a></h2><p>Since gender = 1 if Female, 0 if Male, and the coefficient is -0.15, which means that holding education, age, and degree constant, the wage diff is $e^{-0.15} - 1 = -13.9\%$ between gender, which means females are estimated to earn 13.9% lower hourly wage compared to male. However, the t-statistic is -1.5, and $|t| &lt; 1.96$, which means this coefficient is not statistically significant at the 5% level.</p>
 <p>Overall, although the point estimate suggests a gender wage gap, the regression does not provide strong statistical evidence to support this.</p>
@@ -10456,6 +10456,20 @@ $$
 $$Z_t = \phi_1 Z_{t-1} + \phi_2 Z_{t-2} + \epsilon_t$$<p>the autocorrelations satisfy:</p>
 $$\rho_1 = \phi_1 + \phi_2 \rho_1, \rho_2 = \phi_1 \rho_1 + \phi_2$$$$\phi_1 = 0.6, \phi_2 = 0.2$$<p>thus</p>
 $$\rho_1 = 0.6 + 0.2 \rho_1, \rho_2 = 0.6\rho_1 + 0.2$$<p>thus $\rho_1 = 3/4 = 0.75$, $\rho_2 = 0.6 * 0.75 + 0.2 = 0.65$</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
